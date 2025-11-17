@@ -1,10 +1,10 @@
 [package]
 name = "http-server"
-version = "0.13.2"
+version = "0.14.0"
 authors = ["Damjan Georgievski <gdamjan@gmail.com>"]
 license = "MIT"
 readme = "README.md"
-homepage = "https://github.com/gdamjan/http-server-rs"
+homepage = "https://github.com/wuooyun/http-server-rs"
 edition = "2021"
 
 [dependencies]
