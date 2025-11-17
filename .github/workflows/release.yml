@@ -37,11 +37,8 @@ jobs:
 
       - name: Sign artifact
         run: |
-          cosign sign-blob --yes \
-            --output-signature ${{ matrix.artifact }}.sig \
-            --output-certificate ${{ matrix.artifact }}.cert \
-            ${{ matrix.artifact }}
-
+          cosign sign-blob --yes --output-signature ${{ matrix.artifact }}.sig --output-certificate ${{ matrix.artifact }}.cert  ${{ matrix.artifact }}
+          
       - name: Upload artifacts to github-releases
         uses: svenstaro/upload-release-action@v2
         with:
