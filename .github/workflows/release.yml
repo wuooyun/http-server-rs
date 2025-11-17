@@ -30,7 +30,7 @@ jobs:
       - uses: sigstore/cosign-installer@v3.4.0
 
       - name: Build project
-        run: cargo build --release --locked
+        run: cargo build --release --offline 
 
       - name: Prepare artifact
         run: cp target/release/${{ matrix.target_file }} ${{ matrix.artifact }}
